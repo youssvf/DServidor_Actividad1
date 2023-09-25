@@ -11,7 +11,7 @@ public class Persona {
         this.nombre = nombre;
         this.edad = edad;
         this.intereses = intereses;
-    }
+    }//
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
