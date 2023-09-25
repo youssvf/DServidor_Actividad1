@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Persona {
     public String nombre;
     public int edad;
-    public ArrayList<String> intereses;////////////
+    public ArrayList<String> intereses;
 
     public Persona(String nombre, int edad, ArrayList<String> intereses) {
         this.nombre = nombre;
