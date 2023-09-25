@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <section>
+        <h1>Section 1</h1>
+        <p th:if="${entero <10}">El entero es menor que 10</p>
+        <p th:unless="${entero <10}">El entero es mayor que 10</p>
+    </section>
+    <section>
+        <h1>Section 2</h1>
+        <ul >
+            <li th:each="i : ${#numbers.sequence(0, entero)}">
+                <span th:text="${i}"></span>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
