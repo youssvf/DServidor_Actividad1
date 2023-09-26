@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+<h3>
+    Lista
+</h3>
+<p>
+    <ul th:each="numero : ${lista}">
+    <li th:text="${numero}"></li>
+</ul>
+</p>
+
+<p th:if="${aux} == 1">
+    <a th:text="'La lista SÍ contiene el número ' + ${entero}"></a>
+</p>
+<p th:unless="${aux} == 1">
+    <a th:text="'La lista NO contiene el número ' + ${entero}"></a>
+</p>
+</body>
+</html>

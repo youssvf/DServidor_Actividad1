@@ -10,5 +10,10 @@
 <ul th:each="interes : ${persona.intereses}">
   <li th:text="${interes}"></li>
 </ul>
+
+<p th:if="${persona.edad<=17}">
+    <a th:text="${persona.nombre} + ' es menor de edad porque tiene ' + ${persona.edad} + ' años'" ></a>
+</p>
+<p th:unless="${persona.edad}<=17"><a th:text="${persona.nombre} + ' es mayor de edad porque tiene ' + ${persona.edad} + ' años'"></a> </p>
 </body>
 </html>
